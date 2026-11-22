@@ -1,0 +1,34 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portfólio Externo — Rafael Renan</title><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--b:#087BFF;--r:#0033CC;--soft:#eef4ff;--line:#d6e2fb;--mut:#4b5568;--disp:"Bricolage Grotesque","Arial Black",Arial,sans-serif;--sans:"Manrope",Arial,sans-serif}*{box-sizing:border-box;margin:0}
+body{font-family:var(--sans);background:#fff;color:#000}
+header{text-align:center;padding:clamp(48px,9vw,96px) 22px clamp(24px,4vw,40px);background:linear-gradient(160deg,var(--r),#001a66);color:#fff}
+header small{display:block;font:700 13px var(--sans);letter-spacing:.28em;text-transform:uppercase;color:#cfe3ff;margin-bottom:12px}
+h1{font:800 clamp(38px,8vw,76px)/1 var(--disp);letter-spacing:-.045em}
+.g{max-width:720px;margin:0 auto;padding:clamp(24px,4vw,48px) 16px 64px;display:grid;gap:16px}
+.pi{border:0;padding:0;background:var(--soft);border-radius:18px;overflow:hidden;cursor:zoom-in;box-shadow:0 14px 40px rgba(0,51,204,.16);min-height:240px}
+.pi img{width:100%;height:auto;display:block}
+dialog{border:0;background:transparent;max-width:100vw;max-height:100vh;padding:0;margin:auto}dialog::backdrop{background:rgba(0,0,0,.88)}
+dialog img{max-width:96vw;max-height:94vh;display:block;border-radius:10px}
+</style></head><body>
+<header><small>Ensaio externo</small><h1>Portfólio</h1></header>
+<main class="g">
+<button class="pi" aria-label="Ampliar foto 1"><img loading="lazy" alt="Foto 1" src="https://i.postimg.cc/prh66ctZ/Foto-1.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 2"><img loading="lazy" alt="Foto 2" src="https://i.postimg.cc/1Xkjh0m5/Foto-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 3"><img loading="lazy" alt="Foto 3" src="https://i.postimg.cc/Wbr2DXkR/Foto-5.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 4"><img loading="lazy" alt="Foto 4" src="https://i.postimg.cc/FKFmBvCy/Foto-6.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 5"><img loading="lazy" alt="Foto 5" src="https://i.postimg.cc/h4xR01mN/MG-8748.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 6"><img loading="lazy" alt="Foto 6" src="https://i.postimg.cc/1zTbG852/MG-8766.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 7"><img loading="lazy" alt="Foto 7" src="https://i.postimg.cc/tCywNQy8/MG-8824.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 8"><img loading="lazy" alt="Foto 8" src="https://i.postimg.cc/K8pWb1LB/15-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 9"><img loading="lazy" alt="Foto 9" src="https://i.postimg.cc/ZRps6jQ6/7-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 10"><img loading="lazy" alt="Foto 10" src="https://i.postimg.cc/BZ5w6YDw/17-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 11"><img loading="lazy" alt="Foto 11" src="https://i.postimg.cc/P5J6Sdcq/14-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 12"><img loading="lazy" alt="Foto 12" src="https://i.postimg.cc/XJfxrqZd/19-2.jpg"></button>
+<button class="pi" aria-label="Ampliar foto 13"><img loading="lazy" alt="Foto 13" src="https://i.postimg.cc/FsWpd2Kw/21.jpg"></button>
+</main>
+<dialog id="m"><img id="big" alt=""></dialog>
+<script>
+const m=document.getElementById("m"),big=document.getElementById("big");
+document.querySelectorAll(".pi").forEach(b=>b.onclick=()=>{big.src=b.firstElementChild.src;m.showModal()});
+m.onclick=()=>m.close();
+</script></body></html>
