@@ -1,1 +1,0 @@
-# portfolio-ensaio-externo
